@@ -1,13 +1,13 @@
-package com.svalero.carsapi;
+package com.svalero.carsApi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CarsapiApplication {
+public class CarsApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CarsapiApplication.class, args);
+		SpringApplication.run(CarsApiApplication.class, args);
 	}
 
 }

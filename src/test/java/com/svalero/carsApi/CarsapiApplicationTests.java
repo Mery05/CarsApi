@@ -1,4 +1,4 @@
-package com.svalero.carsapi;
+package com.svalero.carsApi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
