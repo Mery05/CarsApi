@@ -20,7 +20,7 @@ public class OficinaServiceImp implements OficinaService{
 
 
     @Override
-    public List<Oficina> listar() {
+    public List<Oficina> listar()throws OficinaNotFoundException {
         return oficinaRepository.findAll();
     }
 
@@ -33,9 +33,9 @@ public class OficinaServiceImp implements OficinaService{
 
     @Override
     public List<Oficina> listarPorCiudad(int ciudadId) {
+
         return oficinaRepository.findByCiudadId(ciudadId);
     }
-
     @Override
     public Oficina añadirOficina(Oficina oficina, Ciudad ciudad) {
         oficina.setCiudad(ciudad);

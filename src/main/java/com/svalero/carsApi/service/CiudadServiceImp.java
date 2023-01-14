@@ -28,9 +28,8 @@ public class CiudadServiceImp implements CiudadService{
     }
 
     @Override
-    public void añadirCiudad(Ciudad ciudad) {
-        ciudadRepository.save(ciudad);
-
+    public Ciudad añadirCiudad(Ciudad ciudad) {
+        return ciudadRepository.save(ciudad);
     }
     @Override
     public Ciudad eliminarCiudad(long id) throws CiudadNotFoundException {

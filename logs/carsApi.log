@@ -1,0 +1,329 @@
+2023-01-14 19:08:36,285 DEBUG o.j.l.LoggerProviders [background-preinit] Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2023-01-14 19:08:36,313 INFO o.s.b.StartupInfoLogger [main] Starting CarsApiApplication using Java 17.0.4.1 with PID 16276 (C:\Users\freir\OneDrive\Escritorio\CarsApi\target\classes started by freir in C:\Users\freir\OneDrive\Escritorio\CarsApi)
+2023-01-14 19:08:36,313 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-14 19:08:36,314 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-14 19:08:37,093 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-01-14 19:08:37,095 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-01-14 19:08:37,097 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-14 19:08:37,156 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-01-14 19:08:37,192 DEBUG c.z.h.HikariConfig [main] Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93
+2023-01-14 19:08:37,357 WARN o.h.b.i.MetadataBuilderImpl$MetadataBuildingOptionsImpl [main] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-14 19:08:37,423 DEBUG c.z.h.HikariConfig [main] HikariPool-1 - configuration:
+2023-01-14 19:08:37,425 DEBUG c.z.h.HikariConfig [main] allowPoolSuspension.............false
+2023-01-14 19:08:37,426 DEBUG c.z.h.HikariConfig [main] autoCommit......................true
+2023-01-14 19:08:37,426 DEBUG c.z.h.HikariConfig [main] catalog.........................none
+2023-01-14 19:08:37,426 DEBUG c.z.h.HikariConfig [main] connectionInitSql...............none
+2023-01-14 19:08:37,426 DEBUG c.z.h.HikariConfig [main] connectionTestQuery.............none
+2023-01-14 19:08:37,426 DEBUG c.z.h.HikariConfig [main] connectionTimeout...............30000
+2023-01-14 19:08:37,426 DEBUG c.z.h.HikariConfig [main] dataSource......................none
+2023-01-14 19:08:37,426 DEBUG c.z.h.HikariConfig [main] dataSourceClassName.............none
+2023-01-14 19:08:37,427 DEBUG c.z.h.HikariConfig [main] dataSourceJNDI..................none
+2023-01-14 19:08:37,428 DEBUG c.z.h.HikariConfig [main] dataSourceProperties............{password=<masked>}
+2023-01-14 19:08:37,428 DEBUG c.z.h.HikariConfig [main] driverClassName................."org.h2.Driver"
+2023-01-14 19:08:37,428 DEBUG c.z.h.HikariConfig [main] exceptionOverrideClassName......none
+2023-01-14 19:08:37,428 DEBUG c.z.h.HikariConfig [main] healthCheckProperties...........{}
+2023-01-14 19:08:37,429 DEBUG c.z.h.HikariConfig [main] healthCheckRegistry.............none
+2023-01-14 19:08:37,429 DEBUG c.z.h.HikariConfig [main] idleTimeout.....................600000
+2023-01-14 19:08:37,429 DEBUG c.z.h.HikariConfig [main] initializationFailTimeout.......1
+2023-01-14 19:08:37,429 DEBUG c.z.h.HikariConfig [main] isolateInternalQueries..........false
+2023-01-14 19:08:37,429 DEBUG c.z.h.HikariConfig [main] jdbcUrl.........................jdbc:h2:file:C:/Users/freir/carsapi.db
+2023-01-14 19:08:37,429 DEBUG c.z.h.HikariConfig [main] keepaliveTime...................0
+2023-01-14 19:08:37,429 DEBUG c.z.h.HikariConfig [main] leakDetectionThreshold..........0
+2023-01-14 19:08:37,430 DEBUG c.z.h.HikariConfig [main] maxLifetime.....................1800000
+2023-01-14 19:08:37,430 DEBUG c.z.h.HikariConfig [main] maximumPoolSize.................10
+2023-01-14 19:08:37,430 DEBUG c.z.h.HikariConfig [main] metricRegistry..................none
+2023-01-14 19:08:37,430 DEBUG c.z.h.HikariConfig [main] metricsTrackerFactory...........none
+2023-01-14 19:08:37,430 DEBUG c.z.h.HikariConfig [main] minimumIdle.....................10
+2023-01-14 19:08:37,430 DEBUG c.z.h.HikariConfig [main] password........................<masked>
+2023-01-14 19:08:37,430 DEBUG c.z.h.HikariConfig [main] poolName........................"HikariPool-1"
+2023-01-14 19:08:37,430 DEBUG c.z.h.HikariConfig [main] readOnly........................false
+2023-01-14 19:08:37,430 DEBUG c.z.h.HikariConfig [main] registerMbeans..................false
+2023-01-14 19:08:37,430 DEBUG c.z.h.HikariConfig [main] scheduledExecutor...............none
+2023-01-14 19:08:37,431 DEBUG c.z.h.HikariConfig [main] schema..........................none
+2023-01-14 19:08:37,431 DEBUG c.z.h.HikariConfig [main] threadFactory...................internal
+2023-01-14 19:08:37,431 DEBUG c.z.h.HikariConfig [main] transactionIsolation............default
+2023-01-14 19:08:37,431 DEBUG c.z.h.HikariConfig [main] username........................"sa"
+2023-01-14 19:08:37,431 DEBUG c.z.h.HikariConfig [main] validationTimeout...............5000
+2023-01-14 19:08:37,431 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-14 19:08:37,584 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:08:37,585 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-14 19:08:37,598 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-01-14 19:08:37,695 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-01-14 19:08:37,697 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn1: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:08:37,711 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn2: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:08:37,726 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn3: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:08:37,742 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn4: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:08:37,758 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn5: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:08:37,774 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn6: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:08:37,790 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn7: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:08:37,806 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn8: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:08:37,821 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn9: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:08:37,836 DEBUG c.z.h.p.HikariPool [HikariPool-1 connection adder] HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-01-14 19:08:38,385 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-14 19:08:38,502 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.AlquilerController:
+	{POST [/usuario/{usuarioId}/coche/{cocheId}/alquileres]}: añadirAlquiler(Alquiler,long,long)
+	{PUT [/alquileres/{id}]}: modificarAlquiler(long,Alquiler)
+	{DELETE [/alquileres/{id}]}: eliminarAlquiler(long)
+	{GET [/alquileres]}: getAlquiler()
+	{GET [/alquiler/{id}]}: getAlquiler(long)
+2023-01-14 19:08:38,506 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.CiudadController:
+	{POST [/ciudades]}: añadirCiudad(Ciudad)
+	{DELETE [/ciudades/{id}]}: eliminarCiudad(long)
+	{PUT [/ciudades/{id}]}: modificarCiudad(long,Ciudad)
+	{GET [/ciudades]}: getCiudades()
+	{GET [/ciudad/{id}]}: getCiudad(long)
+2023-01-14 19:08:38,508 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.CocheController:
+	{DELETE [/coches/{id}]}: eliminarCoche(long)
+	{PUT [/coches/{id}]}: modificarCoche(long,Coche)
+	{GET [/coche/{id}]}: getCoche(long)
+	{POST [/coches]}: añadirCoche(Coche)
+	{GET [/coches]}: getCoches()
+2023-01-14 19:08:38,509 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.OficinaController:
+	{PUT [/oficinas/{id}]}: modificarOficina(long,Oficina)
+	{GET [/oficinas]}: getOficina(String)
+	{GET [/oficina/{id}]}: getOficina(long)
+	{DELETE [/oficinas/{id}]}: eliminarOficina(long)
+	{POST [/ciudad/{ciudadId}/oficina]}: añadirOficina(Oficina,long)
+2023-01-14 19:08:38,510 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.UsuarioController:
+	{GET [/usuario/{id}]}: getUsuario(long)
+	{GET [/usuarios]}: getUsuarios()
+	{POST [/usuarios]}: añadirUsuario(Usuario)
+	{PUT [/usuarios/{id}]}: modificarUsuario(long,Usuario)
+	{DELETE [/usuarios/{id}]}: eliminarUsuario(long)
+2023-01-14 19:08:38,512 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2023-01-14 19:08:38,523 DEBUG o.s.w.s.h.AbstractDetectingUrlHandlerMapping [main] 'beanNameHandlerMapping' {}
+2023-01-14 19:08:38,537 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2023-01-14 19:08:38,605 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-01-14 19:08:38,627 INFO o.s.b.StartupInfoLogger [main] Started CarsApiApplication in 2.529 seconds (process running for 2.845)
+2023-01-14 19:09:05,382 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-14 19:09:07,711 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-01-14 19:09:07,711 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-01-14 19:09:37,724 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-01-14 19:09:37,724 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-01-14 19:28:33,325 DEBUG o.j.l.LoggerProviders [background-preinit] Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2023-01-14 19:28:33,360 INFO o.s.b.StartupInfoLogger [main] Starting CarsApiApplication using Java 17.0.4.1 with PID 2532 (C:\Users\freir\OneDrive\Escritorio\CarsApi\target\classes started by freir in C:\Users\freir\OneDrive\Escritorio\CarsApi)
+2023-01-14 19:28:33,360 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-14 19:28:33,361 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-14 19:28:34,146 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-01-14 19:28:34,147 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-01-14 19:28:34,147 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-14 19:28:34,206 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-01-14 19:28:34,250 DEBUG c.z.h.HikariConfig [main] Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93
+2023-01-14 19:28:34,446 WARN o.h.b.i.MetadataBuilderImpl$MetadataBuildingOptionsImpl [main] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-14 19:28:34,512 DEBUG c.z.h.HikariConfig [main] HikariPool-1 - configuration:
+2023-01-14 19:28:34,515 DEBUG c.z.h.HikariConfig [main] allowPoolSuspension.............false
+2023-01-14 19:28:34,515 DEBUG c.z.h.HikariConfig [main] autoCommit......................true
+2023-01-14 19:28:34,516 DEBUG c.z.h.HikariConfig [main] catalog.........................none
+2023-01-14 19:28:34,516 DEBUG c.z.h.HikariConfig [main] connectionInitSql...............none
+2023-01-14 19:28:34,516 DEBUG c.z.h.HikariConfig [main] connectionTestQuery.............none
+2023-01-14 19:28:34,517 DEBUG c.z.h.HikariConfig [main] connectionTimeout...............30000
+2023-01-14 19:28:34,517 DEBUG c.z.h.HikariConfig [main] dataSource......................none
+2023-01-14 19:28:34,517 DEBUG c.z.h.HikariConfig [main] dataSourceClassName.............none
+2023-01-14 19:28:34,517 DEBUG c.z.h.HikariConfig [main] dataSourceJNDI..................none
+2023-01-14 19:28:34,518 DEBUG c.z.h.HikariConfig [main] dataSourceProperties............{password=<masked>}
+2023-01-14 19:28:34,518 DEBUG c.z.h.HikariConfig [main] driverClassName................."org.h2.Driver"
+2023-01-14 19:28:34,518 DEBUG c.z.h.HikariConfig [main] exceptionOverrideClassName......none
+2023-01-14 19:28:34,518 DEBUG c.z.h.HikariConfig [main] healthCheckProperties...........{}
+2023-01-14 19:28:34,519 DEBUG c.z.h.HikariConfig [main] healthCheckRegistry.............none
+2023-01-14 19:28:34,519 DEBUG c.z.h.HikariConfig [main] idleTimeout.....................600000
+2023-01-14 19:28:34,519 DEBUG c.z.h.HikariConfig [main] initializationFailTimeout.......1
+2023-01-14 19:28:34,519 DEBUG c.z.h.HikariConfig [main] isolateInternalQueries..........false
+2023-01-14 19:28:34,519 DEBUG c.z.h.HikariConfig [main] jdbcUrl.........................jdbc:h2:file:C:/Users/freir/carsapi.db
+2023-01-14 19:28:34,519 DEBUG c.z.h.HikariConfig [main] keepaliveTime...................0
+2023-01-14 19:28:34,519 DEBUG c.z.h.HikariConfig [main] leakDetectionThreshold..........0
+2023-01-14 19:28:34,520 DEBUG c.z.h.HikariConfig [main] maxLifetime.....................1800000
+2023-01-14 19:28:34,520 DEBUG c.z.h.HikariConfig [main] maximumPoolSize.................10
+2023-01-14 19:28:34,521 DEBUG c.z.h.HikariConfig [main] metricRegistry..................none
+2023-01-14 19:28:34,521 DEBUG c.z.h.HikariConfig [main] metricsTrackerFactory...........none
+2023-01-14 19:28:34,521 DEBUG c.z.h.HikariConfig [main] minimumIdle.....................10
+2023-01-14 19:28:34,521 DEBUG c.z.h.HikariConfig [main] password........................<masked>
+2023-01-14 19:28:34,521 DEBUG c.z.h.HikariConfig [main] poolName........................"HikariPool-1"
+2023-01-14 19:28:34,521 DEBUG c.z.h.HikariConfig [main] readOnly........................false
+2023-01-14 19:28:34,521 DEBUG c.z.h.HikariConfig [main] registerMbeans..................false
+2023-01-14 19:28:34,521 DEBUG c.z.h.HikariConfig [main] scheduledExecutor...............none
+2023-01-14 19:28:34,521 DEBUG c.z.h.HikariConfig [main] schema..........................none
+2023-01-14 19:28:34,521 DEBUG c.z.h.HikariConfig [main] threadFactory...................internal
+2023-01-14 19:28:34,521 DEBUG c.z.h.HikariConfig [main] transactionIsolation............default
+2023-01-14 19:28:34,521 DEBUG c.z.h.HikariConfig [main] username........................"sa"
+2023-01-14 19:28:34,521 DEBUG c.z.h.HikariConfig [main] validationTimeout...............5000
+2023-01-14 19:28:34,521 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-14 19:28:34,664 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:28:34,665 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-14 19:28:34,677 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-01-14 19:28:34,781 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-01-14 19:28:34,782 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn1: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:28:34,796 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn2: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:28:34,813 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn3: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:28:34,827 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn4: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:28:34,844 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn5: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:28:34,859 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn6: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:28:34,875 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn7: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:28:34,890 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn8: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:28:34,906 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn9: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:28:34,922 DEBUG c.z.h.p.HikariPool [HikariPool-1 connection adder] HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-01-14 19:28:35,429 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-14 19:28:35,527 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.AlquilerController:
+	{POST [/usuario/{usuarioId}/coche/{cocheId}/alquileres]}: añadirAlquiler(Alquiler,long,long)
+	{PUT [/alquileres/{id}]}: modificarAlquiler(long,Alquiler)
+	{DELETE [/alquileres/{id}]}: eliminarAlquiler(long)
+	{GET [/alquileres]}: getAlquiler()
+	{GET [/alquiler/{id}]}: getAlquiler(long)
+2023-01-14 19:28:35,530 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.CiudadController:
+	{POST [/ciudades]}: añadirCiudad(Ciudad)
+	{GET [/ciudad/{id}]}: getCiudad(long)
+	{DELETE [/ciudades/{id}]}: eliminarCiudad(long)
+	{GET [/ciudades]}: getCiudades()
+	{PUT [/ciudades/{id}]}: modificarCiudad(long,Ciudad)
+2023-01-14 19:28:35,531 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.CocheController:
+	{POST [/coches]}: añadirCoche(Coche)
+	{DELETE [/coches/{id}]}: eliminarCoche(long)
+	{GET [/coche/{id}]}: getCoche(long)
+	{PUT [/coches/{id}]}: modificarCoche(long,Coche)
+	{GET [/coches]}: getCoches()
+2023-01-14 19:28:35,531 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.OficinaController:
+	{DELETE [/oficinas/{id}]}: eliminarOficina(long)
+	{PUT [/oficinas/{id}]}: modificarOficina(long,Oficina)
+	{POST [/ciudad/{ciudadId}/oficina]}: añadirOficina(Oficina,long)
+	{GET [/oficinas]}: getOficina(String)
+	{GET [/oficina/{id}]}: getOficina(long)
+2023-01-14 19:28:35,532 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.UsuarioController:
+	{POST [/usuarios]}: añadirUsuario(Usuario)
+	{PUT [/usuarios/{id}]}: modificarUsuario(long,Usuario)
+	{GET [/usuarios]}: getUsuarios()
+	{GET [/usuario/{id}]}: getUsuario(long)
+	{DELETE [/usuarios/{id}]}: eliminarUsuario(long)
+2023-01-14 19:28:35,533 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2023-01-14 19:28:35,539 DEBUG o.s.w.s.h.AbstractDetectingUrlHandlerMapping [main] 'beanNameHandlerMapping' {}
+2023-01-14 19:28:35,547 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2023-01-14 19:28:35,591 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-01-14 19:28:35,609 INFO o.s.b.StartupInfoLogger [main] Started CarsApiApplication in 2.503 seconds (process running for 2.834)
+2023-01-14 19:28:49,628 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-14 19:28:49,652 INFO c.s.c.c.OficinaController [http-nio-8081-exec-2] filtrar oficinas por ciudad
+2023-01-14 19:28:58,743 INFO c.s.c.c.OficinaController [http-nio-8081-exec-4] filtrar oficinas por ciudad
+2023-01-14 19:29:04,785 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-01-14 19:29:04,785 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-01-14 19:29:24,573 INFO c.s.c.c.OficinaController [http-nio-8081-exec-3] filtrar oficinas por ciudad
+2023-01-14 19:29:33,690 INFO c.s.c.c.OficinaController [http-nio-8081-exec-1] filtrar oficinas por ciudad
+2023-01-14 19:29:34,795 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-01-14 19:29:34,795 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-01-14 19:35:18,576 DEBUG o.j.l.LoggerProviders [background-preinit] Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2023-01-14 19:35:18,606 INFO o.s.b.StartupInfoLogger [main] Starting CarsApiApplication using Java 17.0.4.1 with PID 15200 (C:\Users\freir\OneDrive\Escritorio\CarsApi\target\classes started by freir in C:\Users\freir\OneDrive\Escritorio\CarsApi)
+2023-01-14 19:35:18,606 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-01-14 19:35:18,607 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-14 19:35:19,337 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-01-14 19:35:19,337 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-01-14 19:35:19,339 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-14 19:35:19,396 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-01-14 19:35:19,436 DEBUG c.z.h.HikariConfig [main] Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93
+2023-01-14 19:35:19,599 WARN o.h.b.i.MetadataBuilderImpl$MetadataBuildingOptionsImpl [main] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-14 19:35:19,669 DEBUG c.z.h.HikariConfig [main] HikariPool-1 - configuration:
+2023-01-14 19:35:19,671 DEBUG c.z.h.HikariConfig [main] allowPoolSuspension.............false
+2023-01-14 19:35:19,672 DEBUG c.z.h.HikariConfig [main] autoCommit......................true
+2023-01-14 19:35:19,673 DEBUG c.z.h.HikariConfig [main] catalog.........................none
+2023-01-14 19:35:19,673 DEBUG c.z.h.HikariConfig [main] connectionInitSql...............none
+2023-01-14 19:35:19,673 DEBUG c.z.h.HikariConfig [main] connectionTestQuery.............none
+2023-01-14 19:35:19,673 DEBUG c.z.h.HikariConfig [main] connectionTimeout...............30000
+2023-01-14 19:35:19,673 DEBUG c.z.h.HikariConfig [main] dataSource......................none
+2023-01-14 19:35:19,673 DEBUG c.z.h.HikariConfig [main] dataSourceClassName.............none
+2023-01-14 19:35:19,673 DEBUG c.z.h.HikariConfig [main] dataSourceJNDI..................none
+2023-01-14 19:35:19,674 DEBUG c.z.h.HikariConfig [main] dataSourceProperties............{password=<masked>}
+2023-01-14 19:35:19,674 DEBUG c.z.h.HikariConfig [main] driverClassName................."org.h2.Driver"
+2023-01-14 19:35:19,674 DEBUG c.z.h.HikariConfig [main] exceptionOverrideClassName......none
+2023-01-14 19:35:19,674 DEBUG c.z.h.HikariConfig [main] healthCheckProperties...........{}
+2023-01-14 19:35:19,675 DEBUG c.z.h.HikariConfig [main] healthCheckRegistry.............none
+2023-01-14 19:35:19,676 DEBUG c.z.h.HikariConfig [main] idleTimeout.....................600000
+2023-01-14 19:35:19,676 DEBUG c.z.h.HikariConfig [main] initializationFailTimeout.......1
+2023-01-14 19:35:19,676 DEBUG c.z.h.HikariConfig [main] isolateInternalQueries..........false
+2023-01-14 19:35:19,676 DEBUG c.z.h.HikariConfig [main] jdbcUrl.........................jdbc:h2:file:C:/Users/freir/carsapi.db
+2023-01-14 19:35:19,676 DEBUG c.z.h.HikariConfig [main] keepaliveTime...................0
+2023-01-14 19:35:19,677 DEBUG c.z.h.HikariConfig [main] leakDetectionThreshold..........0
+2023-01-14 19:35:19,677 DEBUG c.z.h.HikariConfig [main] maxLifetime.....................1800000
+2023-01-14 19:35:19,677 DEBUG c.z.h.HikariConfig [main] maximumPoolSize.................10
+2023-01-14 19:35:19,677 DEBUG c.z.h.HikariConfig [main] metricRegistry..................none
+2023-01-14 19:35:19,677 DEBUG c.z.h.HikariConfig [main] metricsTrackerFactory...........none
+2023-01-14 19:35:19,677 DEBUG c.z.h.HikariConfig [main] minimumIdle.....................10
+2023-01-14 19:35:19,677 DEBUG c.z.h.HikariConfig [main] password........................<masked>
+2023-01-14 19:35:19,677 DEBUG c.z.h.HikariConfig [main] poolName........................"HikariPool-1"
+2023-01-14 19:35:19,677 DEBUG c.z.h.HikariConfig [main] readOnly........................false
+2023-01-14 19:35:19,678 DEBUG c.z.h.HikariConfig [main] registerMbeans..................false
+2023-01-14 19:35:19,678 DEBUG c.z.h.HikariConfig [main] scheduledExecutor...............none
+2023-01-14 19:35:19,679 DEBUG c.z.h.HikariConfig [main] schema..........................none
+2023-01-14 19:35:19,679 DEBUG c.z.h.HikariConfig [main] threadFactory...................internal
+2023-01-14 19:35:19,679 DEBUG c.z.h.HikariConfig [main] transactionIsolation............default
+2023-01-14 19:35:19,679 DEBUG c.z.h.HikariConfig [main] username........................"sa"
+2023-01-14 19:35:19,679 DEBUG c.z.h.HikariConfig [main] validationTimeout...............5000
+2023-01-14 19:35:19,679 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-14 19:35:19,836 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:35:19,837 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-14 19:35:19,849 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-01-14 19:35:19,950 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-01-14 19:35:19,950 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn1: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:35:19,965 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn2: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:35:19,981 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn3: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:35:19,997 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn4: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:35:20,013 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn5: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:35:20,028 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn6: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:35:20,045 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn7: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:35:20,060 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn8: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:35:20,075 DEBUG c.z.h.p.HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection conn9: url=jdbc:h2:file:C:/Users/freir/carsapi.db user=SA
+2023-01-14 19:35:20,091 DEBUG c.z.h.p.HikariPool [HikariPool-1 connection adder] HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-01-14 19:35:20,648 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-14 19:35:20,755 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.AlquilerController:
+	{PUT [/alquileres/{id}]}: modificarAlquiler(long,Alquiler)
+	{GET [/alquileres]}: getAlquiler()
+	{GET [/alquiler/{id}]}: getAlquiler(long)
+	{POST [/usuario/{usuarioId}/coche/{cocheId}/alquileres]}: añadirAlquiler(Alquiler,long,long)
+	{DELETE [/alquileres/{id}]}: eliminarAlquiler(long)
+2023-01-14 19:35:20,757 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.CiudadController:
+	{POST [/ciudades]}: añadirCiudad(Ciudad)
+	{DELETE [/ciudades/{id}]}: eliminarCiudad(long)
+	{PUT [/ciudades/{id}]}: modificarCiudad(long,Ciudad)
+	{GET [/ciudades]}: getCiudades()
+	{GET [/ciudad/{id}]}: getCiudad(long)
+2023-01-14 19:35:20,759 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.CocheController:
+	{POST [/coches]}: añadirCoche(Coche)
+	{DELETE [/coches/{id}]}: eliminarCoche(long)
+	{PUT [/coches/{id}]}: modificarCoche(long,Coche)
+	{GET [/coche/{id}]}: getCoche(long)
+	{GET [/coches]}: getCoches()
+2023-01-14 19:35:20,759 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.OficinaController:
+	{POST [/ciudad/{ciudadId}/oficina]}: añadirOficina(Oficina,long)
+	{DELETE [/oficinas/{id}]}: eliminarOficina(long)
+	{PUT [/oficinas/{id}]}: modificarOficina(long,Oficina)
+	{GET [/oficinas]}: getOficina(String)
+	{GET [/oficina/{id}]}: getOficina(long)
+2023-01-14 19:35:20,760 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	c.s.c.c.UsuarioController:
+	{POST [/usuarios]}: añadirUsuario(Usuario)
+	{DELETE [/usuarios/{id}]}: eliminarUsuario(long)
+	{PUT [/usuarios/{id}]}: modificarUsuario(long,Usuario)
+	{GET [/usuarios]}: getUsuarios()
+	{GET [/usuario/{id}]}: getUsuario(long)
+2023-01-14 19:35:20,761 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2023-01-14 19:35:20,768 DEBUG o.s.w.s.h.AbstractDetectingUrlHandlerMapping [main] 'beanNameHandlerMapping' {}
+2023-01-14 19:35:20,776 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2023-01-14 19:35:20,821 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-01-14 19:35:20,840 INFO o.s.b.StartupInfoLogger [main] Started CarsApiApplication in 2.457 seconds (process running for 2.775)

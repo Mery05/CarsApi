@@ -10,9 +10,9 @@ import java.util.List;
 
 public interface OficinaService {
 
-    List<Oficina> listar();
+    List<Oficina> listar() throws OficinaNotFoundException;
+    List<Oficina> listarPorCiudad(int id);
     Oficina buscarPorId(long id) throws OficinaNotFoundException;
-    List<Oficina>listarPorCiudad(int ciudadId);
     Oficina añadirOficina (Oficina oficina, Ciudad ciudad);
     Oficina eliminarOficina(long id) throws OficinaNotFoundException;
 

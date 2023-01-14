@@ -2,6 +2,8 @@ package com.svalero.carsApi.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,9 +23,13 @@ public class Usuario {
     @Column
     private String dni;
     @Column
+    @NotBlank(message = "este dato no puede quedar en blanco")
+    @NotNull(message = "solo se adminten datos validos")
     private String nombre;
     @Column
     private String apellidos;
+    @NotBlank(message = "este dato no puede quedar en blanco")
+    @NotNull(message = "solo se adminten datos validos")
     @Column (name = "fecha_nacimiento")
     @JsonFormat(pattern = "dd-MM-yyyy")
     private LocalDate fechaNacimiento;

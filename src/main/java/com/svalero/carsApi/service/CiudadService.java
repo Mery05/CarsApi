@@ -10,7 +10,7 @@ import java.util.List;
 public interface CiudadService {
     List<Ciudad> listar();
     Ciudad buscarPorId(long id)throws CiudadNotFoundException;
-    void añadirCiudad (Ciudad ciudad);
+    Ciudad añadirCiudad (Ciudad ciudad);
     Ciudad eliminarCiudad (long id) throws CiudadNotFoundException;
     Ciudad modificarCiudad (long id, Ciudad ciudad) throws CiudadNotFoundException;
 }

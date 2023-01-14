@@ -1,6 +1,8 @@
 package com.svalero.carsApi.domain;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,8 +18,12 @@ public class Ciudad {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private long id;
     @Column
+    @NotBlank (message = "este dato no puede quedar en blanco")
+    @NotNull (message = "solo se adminten datos validos")
     private String nombre;
     @Column
+    @NotBlank (message = "este dato no puede quedar en blanco")
+    @NotNull (message = "solo se adminten datos validos")
     private String provincia;
 
     @OneToMany(mappedBy = "ciudad", cascade = CascadeType.ALL)
