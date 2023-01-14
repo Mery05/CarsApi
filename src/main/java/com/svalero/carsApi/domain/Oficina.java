@@ -27,7 +27,6 @@ public class Oficina {
     private String direccion;
     @Column
     @Min(value = 9)
-    @Max(value =9)
     private String telefono;
     @ManyToOne
     @JoinColumn(name = "ciudad_id")

@@ -54,7 +54,7 @@ public class OficinaController {
     }
 
     @PostMapping("/ciudad/{ciudadId}/oficina")
-    public ResponseEntity<Oficina> añadirOficina(@RequestBody Oficina oficina, @PathVariable long ciudadId) throws CiudadNotFoundException{
+    public ResponseEntity<Oficina> añadirOficina(@RequestBody Oficina oficina, @PathVariable long ciudadId) throws CiudadNotFoundException, OficinaNotFoundException {
         Ciudad ciudad = ciudadService.buscarPorId(ciudadId);
         logger.info("buscando la ciudad por id indicada");
         Oficina newOficina = oficinaService.añadirOficina(oficina, ciudad);

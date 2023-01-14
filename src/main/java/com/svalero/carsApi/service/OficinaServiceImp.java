@@ -3,6 +3,7 @@ package com.svalero.carsApi.service;
 import com.svalero.carsApi.domain.Ciudad;
 import com.svalero.carsApi.domain.Coche;
 import com.svalero.carsApi.domain.Oficina;
+import com.svalero.carsApi.exception.CiudadNotFoundException;
 import com.svalero.carsApi.exception.CocheNotFoundException;
 import com.svalero.carsApi.exception.OficinaNotFoundException;
 import com.svalero.carsApi.repository.OficinaRepository;
@@ -37,7 +38,7 @@ public class OficinaServiceImp implements OficinaService{
         return oficinaRepository.findByCiudadId(ciudadId);
     }
     @Override
-    public Oficina añadirOficina(Oficina oficina, Ciudad ciudad) {
+    public Oficina añadirOficina(Oficina oficina, Ciudad ciudad) throws CiudadNotFoundException, OficinaNotFoundException {
         oficina.setCiudad(ciudad);
 
         return oficinaRepository.save(oficina);
