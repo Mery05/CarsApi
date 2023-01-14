@@ -24,7 +24,6 @@ public class CocheServiceImp implements CocheService{
         return cocheRepository.findById(id)
                 .orElseThrow(CocheNotFoundException::new);
 
-
     }
 
     @Override

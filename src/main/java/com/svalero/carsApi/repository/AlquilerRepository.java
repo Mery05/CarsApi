@@ -11,10 +11,7 @@ import java.util.List;
 public interface AlquilerRepository extends CrudRepository <Alquiler, Long>{
 
     List <Alquiler> findAll();
-    Alquiler findById(long id);
-/*
-    List<Alquiler> findByCocheAndMarca(Coche coche, String marca);
 
- */
+
 
 }

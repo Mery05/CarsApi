@@ -12,7 +12,6 @@ public interface CiudadRepository extends CrudRepository <Ciudad, Long> {
 
     List<Ciudad> findAll();
 
-    Ciudad findById(long id);
 
 }
 

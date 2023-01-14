@@ -1,6 +1,7 @@
 package com.svalero.carsApi.service;
 
 import com.svalero.carsApi.domain.Usuario;
+import com.svalero.carsApi.exception.UsuarioNotFoundException;
 import com.svalero.carsApi.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,8 +18,9 @@ public class UsuarioServiceImp implements UsuarioService{
     }
 
     @Override
-    public Usuario buscarPorId(long id) {
-        return usuarioRepository.findById(id);
+    public Usuario buscarPorId(long id) throws UsuarioNotFoundException {
+        return usuarioRepository.findById(id)
+                .orElseThrow(UsuarioNotFoundException::new);
     }
 
     @Override
@@ -28,16 +30,18 @@ public class UsuarioServiceImp implements UsuarioService{
     }
 
     @Override
-    public Usuario eliminarUsuario(long id) {
-        Usuario usuario = usuarioRepository.findById(id);
+    public Usuario eliminarUsuario(long id) throws UsuarioNotFoundException{
+        Usuario usuario = usuarioRepository.findById(id)
+                .orElseThrow(UsuarioNotFoundException::new);
 
         usuarioRepository.delete(usuario);
         return usuario;
     }
 
     @Override
-    public Usuario modificarUsuario(long id, Usuario newUsuario) {
-        Usuario usuario = usuarioRepository.findById(id);
+    public Usuario modificarUsuario(long id, Usuario newUsuario) throws UsuarioNotFoundException{
+        Usuario usuario = usuarioRepository.findById(id)
+                .orElseThrow(UsuarioNotFoundException::new);
         usuario.setDni(newUsuario.getDni());
         usuario.setNombre(newUsuario.getNombre());
         usuario.setApellidos(newUsuario.getApellidos());

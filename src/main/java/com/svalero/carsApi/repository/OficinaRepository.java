@@ -11,4 +11,6 @@ public interface OficinaRepository extends CrudRepository <Oficina, Long> {
 
     List<Oficina> findAll();
     Oficina findByid(long id);
+
+    List<Oficina> findByCiudadId(int ciudadId);
 }

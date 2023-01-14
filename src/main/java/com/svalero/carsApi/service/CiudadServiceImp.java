@@ -1,6 +1,9 @@
 package com.svalero.carsApi.service;
 
 import com.svalero.carsApi.domain.Ciudad;
+import com.svalero.carsApi.domain.Usuario;
+import com.svalero.carsApi.exception.CiudadNotFoundException;
+import com.svalero.carsApi.exception.UsuarioNotFoundException;
 import com.svalero.carsApi.repository.CiudadRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,14 +21,35 @@ public class CiudadServiceImp implements CiudadService{
     }
 
     @Override
-    public Ciudad buscarPorId(long id) {
-        return ciudadRepository.findById(id);
+    public Ciudad buscarPorId(long id) throws CiudadNotFoundException {
+
+        return ciudadRepository.findById(id)
+                .orElseThrow(CiudadNotFoundException::new);
     }
 
     @Override
     public void añadirCiudad(Ciudad ciudad) {
         ciudadRepository.save(ciudad);
 
+    }
+    @Override
+    public Ciudad eliminarCiudad(long id) throws CiudadNotFoundException {
+        Ciudad ciudad = ciudadRepository.findById(id)
+                .orElseThrow(CiudadNotFoundException::new);
+
+        ciudadRepository.delete(ciudad);
+        return ciudad;
+    }
+
+    @Override
+    public Ciudad modificarCiudad(long id, Ciudad newCiudad) throws CiudadNotFoundException{
+        Ciudad ciudad = ciudadRepository.findById(id)
+                .orElseThrow(CiudadNotFoundException::new);
+        ciudad.setNombre(newCiudad.getNombre());
+        ciudad.setProvincia(newCiudad.getProvincia());
+
+        return ciudadRepository.save(ciudad);
 
     }
+
 }

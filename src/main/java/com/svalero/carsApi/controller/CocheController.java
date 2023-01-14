@@ -4,12 +4,17 @@ import com.svalero.carsApi.exception.CocheNotFoundException;
 import com.svalero.carsApi.exception.MensajeError;
 import com.svalero.carsApi.service.CocheService;
 import com.svalero.carsApi.domain.Coche;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class CocheController {
@@ -30,8 +35,11 @@ public class CocheController {
         return ResponseEntity.ok(coche);
     }
 
+
+
+
     @PostMapping("/coches")
-    public ResponseEntity<Coche> añadirCoche(@RequestBody Coche coche){
+    public ResponseEntity<Coche> añadirCoche(@Valid @RequestBody Coche coche){
         Coche newCoche = cocheService.añadirCoche(coche);
         return ResponseEntity.status(HttpStatus.CREATED).body(newCoche);
 
@@ -61,4 +69,15 @@ public class CocheController {
         return new ResponseEntity(mensajeError, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<MensajeError> handleBadRequestException(MethodArgumentNotValidException manve){
+        Map<String, String> errors = new HashMap<>();
+        manve.getBindingResult().getAllErrors().forEach(error -> {
+            String fieldName = ((FieldError) error).getField();
+            String message = error.getDefaultMessage();
+            errors.put(fieldName, message);
+        });
+        MensajeError badRequestMensajeError = new MensajeError(400, "Bad Request", errors);
+        return new ResponseEntity<>(badRequestMensajeError, HttpStatus.BAD_REQUEST);
+    }
 }
