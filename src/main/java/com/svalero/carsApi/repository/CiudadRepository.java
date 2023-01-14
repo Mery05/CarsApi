@@ -1,16 +1,18 @@
 package com.svalero.carsApi.repository;
 
+import com.svalero.carsApi.domain.Ciudad;
 import com.svalero.carsApi.domain.Coche;
-import com.svalero.carsApi.exception.CocheNotFoundException;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface CocheRepository extends CrudRepository <Coche, Long> {
+public interface CiudadRepository extends CrudRepository <Ciudad, Long> {
 
-    List <Coche> findAll();
+    List<Ciudad> findAll();
 
+    Ciudad findById(long id);
 
 }
+

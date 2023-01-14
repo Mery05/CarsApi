@@ -1,6 +1,7 @@
 package com.svalero.carsApi.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -23,5 +24,15 @@ public class Alquiler {
     @JsonFormat(pattern="dd-MM-yyyy")
     private LocalDate fechaFin;
 
+    @ManyToOne
+    @JoinColumn(name = "coche_id")
+    @JsonBackReference(value = "coche-alquiler")
+    private Coche coche;
+
+
+    @ManyToOne
+    @JoinColumn(name = "usuario_id")
+    @JsonBackReference("value = usuario-alquiler")
+    private Usuario usuario;
 
 }

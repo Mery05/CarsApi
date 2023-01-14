@@ -1,6 +1,7 @@
 package com.svalero.carsApi.repository;
 
 import com.svalero.carsApi.domain.Alquiler;
+import com.svalero.carsApi.domain.Coche;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -11,5 +12,9 @@ public interface AlquilerRepository extends CrudRepository <Alquiler, Long>{
 
     List <Alquiler> findAll();
     Alquiler findById(long id);
+/*
+    List<Alquiler> findByCocheAndMarca(Coche coche, String marca);
+
+ */
 
 }
