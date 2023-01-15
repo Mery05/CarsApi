@@ -21,6 +21,8 @@ public class Usuario {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private long id;
     @Column
+    @NotBlank(message = "este dato no puede quedar en blanco")
+    @NotNull(message = "solo se adminten datos validos")
     private String dni;
     @Column
     @NotBlank(message = "este dato no puede quedar en blanco")
@@ -28,8 +30,6 @@ public class Usuario {
     private String nombre;
     @Column
     private String apellidos;
-    @NotBlank(message = "este dato no puede quedar en blanco")
-    @NotNull(message = "solo se adminten datos validos")
     @Column (name = "fecha_nacimiento")
     @JsonFormat(pattern = "dd-MM-yyyy")
     private LocalDate fechaNacimiento;
